@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_gravity="top"
+        android:layout_marginTop="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="2497-trophy.json"
+        app:lottie_loop="true">
+    </com.airbnb.lottie.LottieAnimationView>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to main" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:text="Congrats"
+        android:textColor="@color/colorAccent"
+        android:textSize="30dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="bottom"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="7434-confetti.json"
+        app:lottie_loop="true">
+    </com.airbnb.lottie.LottieAnimationView>
+
+
+</FrameLayout>

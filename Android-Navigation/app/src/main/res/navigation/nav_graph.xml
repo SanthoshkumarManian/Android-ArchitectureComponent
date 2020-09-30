@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main">
+    <fragment
+        android:id="@+id/main"
+        android:name="in.dotworld.navigatino_jetpack.Main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_main_to_secondPage"
+            app:destination="@id/secondPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondPage"
+        android:name="in.dotworld.navigatino_jetpack.SecondPage"
+        android:label="fragment_second_page"
+        tools:layout="@layout/fragment_second_page" >
+        <action
+            android:id="@+id/action_secondpage_to_thirdpage"
+            app:destination="@id/thirdpage" />
+    </fragment>
+
+    <fragment android:id="@+id/thirdpage"
+        android:name="in.dotworld.navigatino_jetpack.thirdpage"
+        android:label="Third Page"
+        tools:layout="@layout/fragement_third_page">
+       <action
+            android:id="@+id/action_thirdpage_to_main"
+            app:destination="@id/main"/>
+    </fragment>
+</navigation>
